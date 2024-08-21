@@ -9,7 +9,7 @@ It contains an implementation of the [CNN](https://ieeexplore.ieee.org/abstract/
 For the full protection of the privacy of face embeddings (i.e. in terms of gender prediction), it contains the implementation of [PE-MIU](https://ieeexplore.ieee.org/abstract/document/9094207). This method applies k permutations on a vector of floating point-based values (e.g. face embedding). It is important to highlight that this method modifies the distribution of the feature space by avoiding a high success chance of gender prediction. 
 
 # Contribution
-It is explored to what extent the non-invertibility requirement (i.e. face reconstruction and gender prediction) can be met by methods that claim to provide soft-biometric privacy protection like [PE-MIU]. To that end, a multi-term loss function of deconvolutional neural network was adapted to reconstruct face images from face embeddings protected by [PE-MIU]. 
+It is explored to what extent the non-invertibility requirement (i.e. face reconstruction and gender prediction) can be met by methods that claim to provide soft-biometric privacy protection like [PE-MIU] (https://ieeexplore.ieee.org/abstract/document/9094207). To that end, a multi-term loss function of deconvolutional neural network was adapted to reconstruct face images from face embeddings protected by [PE-MIU] (https://ieeexplore.ieee.org/abstract/document/9094207). 
 
 ### Installation
 
@@ -29,7 +29,7 @@ For the work of the databases used, please download the following databases:
 
 For pre-processing datasets and alignment of face images, see [main.py](face_reconstruction/main.py).
 
-For training of face reconstruction from protected face embeddings, see [train.py](face_reconstruction/train.py). Some face reconstruction results and gender prediction resulting from the training with the embedding extractors [ElasticFace] and [ArcFace] can be found in [final_eval_elasticface.ipynb](notebooks/final_eval_elasticface.ipynb) [final_eval_arcface.ipynb](notebooks/final_eval_arcface.ipynb) [reconstructed_samples.ipynb](notebooks/reconstructed_samples.ipynb).
+For training of face reconstruction from protected face embeddings, see [train.py](face_reconstruction/train.py). Some face reconstruction results and gender prediction resulting from the training with the embedding extractors [ElasticFace](https://openaccess.thecvf.com/content/CVPR2022W/Biometrics/html/Boutros_ElasticFace_Elastic_Margin_Loss_for_Deep_Face_Recognition_CVPRW_2022_paper.html) and [ArcFace](https://openaccess.thecvf.com/content_CVPR_2019/html/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.html) can be found in [final_eval_elasticface.ipynb](notebooks/final_eval_elasticface.ipynb) [final_eval_arcface.ipynb](notebooks/final_eval_arcface.ipynb) [reconstructed_samples.ipynb](notebooks/reconstructed_samples.ipynb).
 
 For explainability results, see [saliency_map.ipynb](notebooks/saliency_map.ipynb).
 
@@ -50,7 +50,7 @@ Project Organization
     ├── face_reconstruction <- Training and Testing of the DNN
 
       │
-      ├── src                    <- Contains folders and implementation of the DNN-based architecture 
+      ├── src                    <- Contains implementation of the DNN
       │   ├── AttributePrediction <- Functions for gender prediction using machine learning methods.
       │   └── bob                 <- Contain functions for the invertibility pipeline.
       │   └── CosineSimilarity    <- Function of comparation 
