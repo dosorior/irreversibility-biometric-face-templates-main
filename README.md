@@ -9,7 +9,7 @@ It contains an implementation of the [CNN](https://ieeexplore.ieee.org/abstract/
 For the full protection of the privacy of face embeddings (i.e. in terms of gender prediction), it contains the implementation of [PE-MIU](https://ieeexplore.ieee.org/abstract/document/9094207). This method applies k permutations on a vector of floating point-based values (e.g. face embedding). It is important to highlight that this method modifies the distribution of the feature space by avoiding a high success chance of gender prediction. 
 
 # Contribution
-It is explored to what extent the non-invertibility requirement (i.e. face reconstruction and gender prediction) can be met by methods that claim to provide soft-biometric privacy protection like [PE-MIU] (https://ieeexplore.ieee.org/abstract/document/9094207). To that end, a multi-term loss function of deconvolutional neural network was adapted to reconstruct face images from face embeddings protected by [PE-MIU] (https://ieeexplore.ieee.org/abstract/document/9094207). 
+It is explored to what extent the non-invertibility requirement (i.e. face reconstruction and gender prediction) can be met by methods that claim to provide soft-biometric privacy protection like [PE-MIU](https://ieeexplore.ieee.org/abstract/document/9094207). To that end, a multi-term loss function of deconvolutional neural network was adapted to reconstruct face images from face embeddings protected by [PE-MIU](https://ieeexplore.ieee.org/abstract/document/9094207). 
 
 ### Installation
 
@@ -22,12 +22,11 @@ The package requires Python 3.9 or higher. Other dependencies are listed in the 
 For the work of the databases used, please download the following databases:
 
 [Source FFHQ](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq)
-[Source features cleanner](https://www.dropbox.com/s/0phtgiag0p4bw08/features_cleanner.zip?dl=0)
-[Source lfw](https://www.dropbox.com/s/bqo3uwzualy9u93/lfw.zip?dl=0)
-[Source lfw_align](https://www.dropbox.com/s/myjukv6b18lo007/lfw_align.zip?dl=0)
-
+[Source LFW](https://vis-www.cs.umass.edu/lfw/)
 
 For pre-processing datasets and alignment of face images, see [main.py](face_reconstruction/main.py).
+
+For extraction of face embeddings, use [GenerateEmbeddings.py](face_reconstruction/src/GenerateEmbeddings.py)
 
 For training of face reconstruction from protected face embeddings, see [train.py](face_reconstruction/train.py). Some face reconstruction results and gender prediction resulting from the training with the embedding extractors [ElasticFace](https://openaccess.thecvf.com/content/CVPR2022W/Biometrics/html/Boutros_ElasticFace_Elastic_Margin_Loss_for_Deep_Face_Recognition_CVPRW_2022_paper.html) and [ArcFace](https://openaccess.thecvf.com/content_CVPR_2019/html/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.html) can be found in [final_eval_elasticface.ipynb](notebooks/final_eval_elasticface.ipynb) [final_eval_arcface.ipynb](notebooks/final_eval_arcface.ipynb) [reconstructed_samples.ipynb](notebooks/reconstructed_samples.ipynb).
 
@@ -55,7 +54,7 @@ Project Organization
       │   └── bob                 <- Contain functions for the invertibility pipeline.
       │   └── CosineSimilarity    <- Function of comparation 
       │   └── loss                <- Contain the loss functions pipeline.
-      │   └── pemiu               <- Contain the implementation of the privacy protection method used.
+      │   └── pemiu               <- [PE-MIU] protection method.
       ├── logs                    <- Contains some log results from the training process.
       
 --------
