@@ -85,15 +85,23 @@ Generally, privacy-enhancing face recognition systems are designed to offer perm
 
 ![Results of Gender Prediction after face reconstruction](figures/gender_prediction.png)
 
+- Low probability of gender prediction on protected face embeddings among the different classifiers as a function of K is perceived.
+
 #### Accuracy of Face Reconstruction
 
 ![Reversibility success rates - RSRs (in %) for different combinations of K (size of embedding) and P (block size for permutation)](figures/Face_reconstruction_acc.png)
+
+- It should be also observed that the results attained for lower P values are directly proportional to the K
+values, i.e. RSR improves as P and K drop.
+
+- This observation could be explained due to the minimum information (entropy) that is managed across the blocks in the shuffling process which offers “useful” guesses of the floating-point values in the face reconstruction process.
 
 
 #### Examples of face reconstruction for original face embeddings (i.e. unprotected embeddings) and for protected face embeddings.
 
 ![Examples of Face reconstruction](figures/face_reconst_examples.png)
 
+- Examples of faces reconstructed from different permutations that also reveal gender information. 
 
 ### Citation
 
