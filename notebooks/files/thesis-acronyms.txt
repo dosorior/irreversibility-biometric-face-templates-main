@@ -1,0 +1,34 @@
+  \acro{SOTA}{State of the Art}
+  \acro{COTS}{Commercial off-the-shelf}
+  \acro{FFHQ}{Flickr-Faces-HQ}
+  \acro{MSE}{Mean Squared Error}
+  \acro{DSSIM}{Dissimilarity Structural Index Metric}
+  \acro{SAR}{Success Attack Rate}
+  \acro{LFW}{Labeled Faced in the Wild}
+  \acro{TMR}{True Match Rate}
+  \acro{FMR}{False Match Rate}
+  \acro{FAR}{False Acceptance Rate}
+  \acro{TAR}{True Acceptance Rate}
+  \acro{SAR}{Success Attack Rate}
+  \acro{FNMR}{False Non-Match Rate}
+  \acro{EER}{Equal Error Rate}
+  \acro{DCGAN}{Deep Convolutional Generative Adversarial Network}
+  \acro{GAN}{Generative Adversarial Network}
+  \acro{NbNet}{Neighborly Deconvolutional Neutral Network}
+  \acro{SISFE}{Same Image-Same Feature Extraction}
+  \acro{DISFE}{Different Image-Same Feature Extraction}
+  \acro{SIDFE}{Same Image-Different Feature Extraction}
+  \acro{DIDFE}{Different Image-Different Feature Extraction}
+  \acro{HD}{High Definition}
+  \acro{CNN}{Convolutional Neural Network}
+  \acro{GA}{Genetic Algorithm}
+  \acro{IAMR}{Inversion Attack Match Rate}
+  \acro{BLUFR}{Benchmark of Large-scale Unconstrained Face Recognition}
+  \acro{PFRNet}{Privacy-Enhancing Face-Representation learning Network}
+  \acro{PIC}{Privacy-Gain Identity-Loss Coefficient}
+  \acro{PE-MIU}{Privacy-Enhancing face recognition approach based on Minimum Information Units}
+  \acro{B-PETs}{Biometric Privacy–Enhancing Techniques}
+  \acro{ML}{Machine Learning}
+  \acro{t-SNE}{t-distributed Stochastic Neighbor Embedding}
+  \acro{SVM}{Support Vector Machines}
+  \acro{NN}{Neural Network}

@@ -1,0 +1,20 @@
+Column1;Column2;Column3;Column4;Column5;Column6;Column7;Column8;Column9;Column10;Column11;Column12;Column13;Column14;Column15;Column16;Column17;Column18;Column19;Column20;Column21;Column22;Column23;Column24;Column25;Column26;Column27
+Generated using PyEER 0.5.5;;;;;;;;;;;;;;;;;;;;;;;;;;
+Experiment ID;GMean;GSTD;IMean;ISTD;Sensitivity index (d');AUC;J-Index;J-Index_TH;MCC;MCC_TH;EERlow;EERhigh;EER;ZeroFMR;FMR1000;FMR100;FMR20;FMR10;ZeroFNMR;EER_TH;ZeroFMR_TH;FMR1000_TH;FMR100_TH;FMR20_TH;FMR10_TH;ZeroFNMR_TH
+A;0.7872490452668962;0.08469835564532315;0.1960987199562497;0.05940662360138265;8.08092381768231;0.999240111111111;0.9956666666666667;0.4341080561876457;0.9956760150020263;0.4679732013976654;0.003;0.003;0.003;0.004333333333333333;0.004;0.0026666666666666666;0.002;0.0016666666666666668;0.5373333333333333;0.3649694527887128;0.4679732013976654;0.3990353863471871;0.3351651007236827;0.2966816301393609;0.273043673033685;0.1897639876439634
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+Legend:;;;;;;;;;;;;;;;;;;;;;;;;;;
+GMean: Genuine scores distribution mean;;;;;;;;;;;;;;;;;;;;;;;;;;
+GSTD: Genuine scores distribution standard deviation;;;;;;;;;;;;;;;;;;;;;;;;;;
+IMean: Impostor scores distribution mean;;;;;;;;;;;;;;;;;;;;;;;;;;
+IVariance: Impostor scores distribution standard deviation;;;;;;;;;;;;;;;;;;;;;;;;;;
+Sensitivity index (d'): See NICE:II protocol evaluation;;;;;;;;;;;;;;;;;;;;;;;;;;
+AUC: Area under the ROC curve;;;;;;;;;;;;;;;;;;;;;;;;;;
+J-Index: Youden's J statistic (Youden's Index);;;;;;;;;;;;;;;;;;;;;;;;;;
+MCC: Matthews Correlation Coefficient;;;;;;;;;;;;;;;;;;;;;;;;;;
+EER: Equal Error Rate;;;;;;;;;;;;;;;;;;;;;;;;;;
+EERlow, EERhigh: See FVC2000 protocol evaluation;;;;;;;;;;;;;;;;;;;;;;;;;;
+FMR: False Match Rate;;;;;;;;;;;;;;;;;;;;;;;;;;
+FNMR: False Non-Match Rate;;;;;;;;;;;;;;;;;;;;;;;;;;
+_TH: Threshold;;;;;;;;;;;;;;;;;;;;;;;;;;
+EER_TH: Threshold for which EERlow and EERHigh were calculated;;;;;;;;;;;;;;;;;;;;;;;;;;
